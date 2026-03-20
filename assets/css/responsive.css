@@ -1,0 +1,209 @@
+/* ========== Tablet (768px – 1199px) ========== */
+@media (max-width: 1199px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .session-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .speaking-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stats-row {
+    gap: 24px;
+  }
+}
+
+/* ========== Mobile (<768px) ========== */
+@media (max-width: 767px) {
+  /* Navigation */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 15, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1001;
+    padding-top: 80px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+
+  /* Hamburger active state */
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Hero */
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .stats-row {
+    gap: 16px;
+  }
+
+  /* Grids to single column */
+  .about-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .expertise-grid,
+  .services-grid,
+  .session-types-grid,
+  .contact-cards-grid,
+  .speaking-gallery,
+  .features-grid,
+  .info-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline single column */
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-marker {
+    left: -27px;
+  }
+
+  /* Section padding */
+  :root {
+    --section-padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* Featured project */
+  .featured-project {
+    padding: 24px;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .project-tagline {
+    font-size: 1.1rem;
+  }
+
+  /* Speaking metrics */
+  .speaking-metrics {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Hero CTA */
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Session popular badge */
+  .session-popular .popular-badge {
+    position: static;
+    transform: none;
+    margin-bottom: 12px;
+  }
+}

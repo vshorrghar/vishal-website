@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Shorghar | 4x AWS Certified | Cloud Architect | GenAI Builder</title>
+  <meta name="description" content="4x AWS Certified Cloud Solutions Architect and GenAI builder with 18+ years experience. Kubernetes practitioner, cloud-native enthusiast, and Nordic tech speaker. Building AI applications and helping enterprises adopt GenAI. Based in Copenhagen, Denmark.">
+  <meta name="keywords" content="Cloud Architecture, GenAI, Kubernetes, AWS, Linux, OpenShift, FinOps, RDMA, InfiniBand, AI applications, Nordic, Copenhagen">
+  <meta name="author" content="Vishal Shorghar">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Vishal Shorghar | 4x AWS Certified | Cloud Architect | GenAI Builder">
+  <meta property="og:description" content="4x AWS Certified Cloud Solutions Architect and GenAI builder with 18+ years experience. Kubernetes practitioner, cloud-native enthusiast, and Nordic tech speaker. Building AI applications and helping enterprises adopt GenAI. Based in Copenhagen, Denmark.">
+  <meta property="og:image" content="assets/images/profile-photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Vishal Shorghar - Home">VS</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#expertise" class="nav-link" role="menuitem">Expertise</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#services" class="nav-link" role="menuitem">How I Help</a></li>
+        <li role="none"><a href="#speaking" class="nav-link" role="menuitem">Speaking</a></li>
+        <li role="none"><a href="#events" class="nav-link" role="menuitem">Events</a></li>
+        <li role="none"><a href="#gallery" class="nav-link" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#booking" class="nav-link" role="menuitem">Let's Connect</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section" aria-label="Hero">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <h1 class="hero-name animate-on-scroll">Vishal Shorghar</h1>
+        <p class="hero-subtitle">
+          <span id="typing-target" aria-label="Professional role titles"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </p>
+
+        <div class="stats-row" aria-label="Key achievements">
+          <div class="stat-item">
+            <span class="stat-value">18+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4x</span>
+            <span class="stat-label">AWS Certified</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">K8s</span>
+            <span class="stat-label">OpenShift Specialist</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">15+</span>
+            <span class="stat-label">Workshops Delivered</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#booking" class="btn btn-primary" aria-label="Let's Connect">Let's Connect</a>
+          <a href="#about" class="btn btn-secondary" aria-label="Explore Profile">Explore Profile</a>
+        </div>
+        <blockquote class="hero-quote animate-on-scroll">
+          <p>"Technology is best when it brings people together and amplifies human potential."</p>
+        </blockquote>
+      </div>
+
+      <div class="ticker-banner" aria-label="Technology keywords">
+        <div class="ticker-track">
+          <span class="ticker-item">AWS</span>
+          <span class="ticker-item">Kubernetes</span>
+          <span class="ticker-item">GenAI</span>
+          <span class="ticker-item">Linux</span>
+          <span class="ticker-item">OpenShift</span>
+          <span class="ticker-item">Cloud Architecture</span>
+          <span class="ticker-item">FinOps</span>
+          <span class="ticker-item">RDMA</span>
+          <span class="ticker-item">InfiniBand</span>
+          <span class="ticker-item">Nordic Customers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section" aria-label="About Vishal Shorghar">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">About Me</h2>
+        <div class="about-grid">
+          <div class="about-photo animate-on-scroll">
+            <img src="assets/images/profile-photo.jpg" alt="Vishal Shorghar" loading="lazy">
+          </div>
+          <div class="about-content animate-on-scroll">
+            <p class="about-bio">
+              I'm a Cloud Solutions Architect based in Copenhagen, helping Nordic and EMEA enterprises adopt cloud, Kubernetes, and GenAI. I work across Denmark, Sweden, Finland, and the broader Nordics — with enterprise, SMB, startups, and greenfield customers across multiple industries. Previously as an AWS Technical Account Manager, I ran business reviews, drove operational excellence, and helped customers optimize cloud costs across their portfolios.
+            </p>
+            <p class="about-bio">
+              Before AWS, I was the OpenShift architect for a Nordic company handling payment gateways and government identity platforms on those clusters — with 99.99% uptime and PCI-DSS compliance. Before that, I worked at Portworx/Pure Storage doing QA for their Kubernetes storage solution, testing across multiple clouds and releasing on AWS, Google Cloud, and Azure marketplaces. And at Radisys, I was the Kubernetes infrastructure architect for one of India's biggest broadband platforms — built for Reliance JIO and now serving millions of customers in production.
+            </p>
+            <p class="about-bio">
+              My roots are in high-speed data centers. I validated 10/40G iSCSI, FCoE, and RDMA adapters at Chelsio Communications, then worked on Cisco's UCS blade &amp; rack platform. I've worked with servers from Dell, HPE, IBM, Supermicro — managed SAN/NAS networking, enterprise storage (NetApp, EMC), and Kubernetes storage (Portworx). I started as a technical trainer for Linux and CCNA, then managed worldwide servers and databases for a wireless ISP. My career evolved naturally: data centers → virtualization → Kubernetes &amp; containers → cloud → GenAI. Today I'm 4x AWS Certified and recognized as AWS Kubernetes &amp; Containers Ambassador for the Nordic region.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-cards-grid">
+          <div class="glass-card info-card animate-on-scroll">
+            <span class="info-icon" aria-hidden="true">📍</span>
+            <h3>Location</h3>
+            <p>Copenhagen, Denmark</p>
+          </div>
+          <div class="glass-card info-card animate-on-scroll">
+            <span class="info-icon" aria-hidden="true">🗣️</span>
+            <h3>Languages</h3>
+            <p>English, Hindi Native, Danish Basic</p>
+          </div>
+          <div class="glass-card info-card animate-on-scroll">
+            <span class="info-icon" aria-hidden="true">🎓</span>
+            <h3>Education</h3>
+            <p>B.E. Computer Science, University of Rajasthan</p>
+          </div>
+          <div class="glass-card info-card animate-on-scroll">
+            <span class="info-icon" aria-hidden="true">🔨</span>
+            <h3>Currently Building</h3>
+            <p>TokenIQ + Portfolio Doctor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERTISE SECTION ========== -->
+    <section id="expertise" class="expertise-section" aria-label="Technical Expertise">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Expertise</h2>
+        <div class="expertise-grid">
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">☁️</span>
+            <h3>Cloud Architecture</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">Azure</span>
+              <span class="tech-pill">GCP</span>
+              <span class="tech-pill">Well-Architected</span>
+              <span class="tech-pill">Migration</span>
+              <span class="tech-pill">Landing Zones</span>
+              <span class="tech-pill">Multi-Cloud</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">🤖</span>
+            <h3>GenAI &amp; AI/ML</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">Amazon Bedrock</span>
+              <span class="tech-pill">SageMaker</span>
+              <span class="tech-pill">RAG</span>
+              <span class="tech-pill">LangChain</span>
+              <span class="tech-pill">Agentic AI</span>
+              <span class="tech-pill">Vector DBs</span>
+              <span class="tech-pill">GPU Infra</span>
+              <span class="tech-pill">Responsible AI</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">⚙️</span>
+            <h3>Kubernetes &amp; Containers</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">EKS</span>
+              <span class="tech-pill">OpenShift</span>
+              <span class="tech-pill">ROSA</span>
+              <span class="tech-pill">AKS</span>
+              <span class="tech-pill">GKE</span>
+              <span class="tech-pill">GitOps</span>
+              <span class="tech-pill">Istio</span>
+              <span class="tech-pill">ArgoCD</span>
+              <span class="tech-pill">Falco</span>
+              <span class="tech-pill">Helm</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">💰</span>
+            <h3>FinOps &amp; Cloud Economics</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">Rightsizing</span>
+              <span class="tech-pill">Savings Plans</span>
+              <span class="tech-pill">Spot</span>
+              <span class="tech-pill">TCO Modeling</span>
+              <span class="tech-pill">Cost Allocation</span>
+              <span class="tech-pill">Budget Alerts</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">🔒</span>
+            <h3>Security &amp; Compliance</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">PCI-DSS</span>
+              <span class="tech-pill">GDPR</span>
+              <span class="tech-pill">Zero-Trust</span>
+              <span class="tech-pill">IAM</span>
+              <span class="tech-pill">KMS</span>
+              <span class="tech-pill">GuardDuty</span>
+              <span class="tech-pill">Container Security</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-card animate-on-scroll">
+            <span class="expertise-icon" aria-hidden="true">🌐</span>
+            <h3>High-Performance Networking</h3>
+            <div class="expertise-tags">
+              <span class="tech-pill">RDMA</span>
+              <span class="tech-pill">RoCE</span>
+              <span class="tech-pill">iWARP</span>
+              <span class="tech-pill">InfiniBand</span>
+              <span class="tech-pill">SDN/NFV</span>
+              <span class="tech-pill">VPC Design</span>
+              <span class="tech-pill">Direct Connect</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="experience-section" aria-label="Professional Experience">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2024 – Present</span>
+              <h3>Solutions Architect</h3>
+              <h4>AWS</h4>
+              <p>Enterprise SA for Nordic region. GenAI transformation, cloud strategy, Kubernetes ambassador.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2023 – 2024</span>
+              <h3>Technical Account Manager</h3>
+              <h4>AWS</h4>
+              <p>Helped customers achieve operational excellence and cloud cost optimization. Ran multiple business reviews for enterprise, SMB, startups, and greenfield customers across Denmark, Sweden, Finland, and EMEA. Multi-industry coverage across all Nordics.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2021 – 2023</span>
+              <h3>OpenShift/Kubernetes Architect</h3>
+              <h4>Nets A/S via LTI</h4>
+              <p>OpenShift architect for payment gateway and government identity platforms. 99.99% uptime. PCI-DSS compliance. Mission-critical national infrastructure.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2021</span>
+              <h3>Cloud Quality Engineer</h3>
+              <h4>Pure Storage</h4>
+              <p>QA for Portworx Kubernetes storage solution. Tested across AWS, Google Cloud, and Azure. Released on multiple cloud marketplaces.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2017 – 2021</span>
+              <h3>Kubernetes Infrastructure Architect</h3>
+              <h4>Radisys / Reliance JIO</h4>
+              <p>K8s infra architect for one of India's biggest broadband platforms, now serving millions of customers in production. SDN/NFV microservice architecture on CORD platform.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2013 – 2017</span>
+              <h3>Senior System Validation Engineer</h3>
+              <h4>Cisco</h4>
+              <p>Cisco UCS blade &amp; rack platform validation. FCoE, iSCSI, RDMA RoCE v2. SAN/NAS networking in Cisco data centers. Enterprise storage integration (NetApp, EMC).</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2009 – 2013</span>
+              <h3>Test Engineer &amp; Lead</h3>
+              <h4>Chelsio Communications</h4>
+              <p>10/40GbE high-speed networking adapters — iSCSI, FCoE, RDMA (iWARP, RoCE, InfiniBand). Worked with Dell, HPE, IBM, Supermicro servers.</p>
+            </div>
+          </div>
+          <div class="timeline-entry animate-on-scroll">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-period">2007 – 2009</span>
+              <h3>Technical Trainer &amp; Linux Engineer</h3>
+              <h4>IIHT / Pronto Networks</h4>
+              <p>Linux &amp; CCNA corporate trainer. Managed worldwide servers and databases for a wireless ISP. Where it all started.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects-section" aria-label="Projects and Innovations">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Building Tomorrow, Today</h2>
+        <p class="section-subtitle animate-on-scroll">Real-world AI and cloud applications — from weekend ideas to production systems</p>
+
+        <!-- TokenIQ — Featured Project -->
+        <article class="featured-project glass-card animate-on-scroll" aria-label="TokenIQ project">
+          <div class="project-header">
+            <div class="status-badge status-amber" aria-label="Project status: PoC / Live Demo">
+              <span class="status-dot" aria-hidden="true"></span>
+              🔬 PoC / Live Demo
+            </div>
+            <span class="project-category">GenAI FinOps Platform</span>
+          </div>
+
+          <div class="project-logo" aria-hidden="true">
+            <span class="logo-text"><span class="logo-accent">$</span>TokenIQ</span>
+          </div>
+
+          <h3 class="project-tagline">The Financial Brain of GenAI Systems</h3>
+          <p class="project-subtitle">Model-agnostic AI cost intelligence platform</p>
+
+          <div class="problem-statement terminal-styled">
+            <p><strong>The Problem:</strong> GenAI enterprise spend → $500B+ by 2030. Zero platforms controlling cost + optimization end-to-end. Companies running AI have NO visibility into token spending.</p>
+          </div>
+
+          <div class="terminal-container" id="terminal-mockup" aria-label="TokenIQ terminal mockup showing simulated financial data"></div>
+
+          <div class="features-grid">
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">👁️</span>
+              <span>Token Visibility</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">⚡</span>
+              <span>Prompt Optimization</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🎯</span>
+              <span>Model Selection</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🛡️</span>
+              <span>Data Safety Scoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">📊</span>
+              <span>Quota Forecasting</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">💡</span>
+              <span>Cost Intelligence</span>
+            </div>
+          </div>
+
+          <div class="tech-stack" aria-label="Technology stack">
+            <span class="tech-pill">AWS Lambda</span>
+            <span class="tech-pill">DynamoDB</span>
+            <span class="tech-pill">Amazon Bedrock</span>
+            <span class="tech-pill">SageMaker</span>
+            <span class="tech-pill">Kinesis</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Anthropic Claude</span>
+            <span class="tech-pill">OpenAI</span>
+            <span class="tech-pill">Serverless</span>
+          </div>
+
+          <div class="architecture-callout glass-card">
+            <p><strong>Built on AWS Serverless Architecture:</strong> Lambda → Kinesis → DynamoDB → Bedrock → Next.js Dashboard</p>
+          </div>
+
+          <blockquote class="linkedin-quote">
+            <p>"Think of it as Datadog meets FinOps for the GenAI era..."</p>
+            <cite>— Vishal Shorghar</cite>
+          </blockquote>
+
+          <div class="timeline-progress" aria-label="Project progress: PoC stage">
+            <div class="progress-stage active" aria-label="Idea stage, completed">Idea</div>
+            <div class="progress-connector active" aria-hidden="true"></div>
+            <div class="progress-stage active" aria-label="PoC stage, current">PoC</div>
+            <div class="progress-connector" aria-hidden="true"></div>
+            <div class="progress-stage" aria-label="Building stage, upcoming">Building</div>
+            <div class="progress-connector" aria-hidden="true"></div>
+            <div class="progress-stage" aria-label="Live stage, upcoming">Live</div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://www.linkedin.com/in/vishal-shorghar/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View TokenIQ on LinkedIn">View on LinkedIn</a>
+            <a href="#booking" class="btn btn-secondary" aria-label="Explore TokenIQ concept">Explore Concept</a>
+          </div>
+        </article>
+
+        <!-- Portfolio Doctor -->
+        <article class="glass-card project-card animate-on-scroll" aria-label="Portfolio Doctor project">
+          <div class="project-header">
+            <div class="status-badge status-blue" aria-label="Project status: In Development">
+              <span class="status-dot" aria-hidden="true"></span>
+              🚧 In Development
+            </div>
+            <span class="project-category">AI-Powered Career Tool</span>
+          </div>
+
+          <h3 class="project-name">Portfolio Doctor</h3>
+          <p class="project-tagline">AI-Powered Portfolio Analysis &amp; Optimization</p>
+          <p class="project-description">An intelligent career analysis tool that uses GenAI to evaluate professional portfolios, identify skill gaps, and provide actionable recommendations for career growth.</p>
+
+          <ul class="project-features-list">
+            <li>AI-driven portfolio scoring and analysis</li>
+            <li>Skill gap identification and recommendations</li>
+            <li>Industry benchmarking and trend alignment</li>
+            <li>Personalized career roadmap generation</li>
+          </ul>
+
+          <div class="tech-stack" aria-label="Technology stack">
+            <span class="tech-pill">Amazon Bedrock</span>
+            <span class="tech-pill">RAG Architecture</span>
+            <span class="tech-pill">Vector DB</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">AWS Lambda</span>
+            <span class="tech-pill">S3</span>
+            <span class="tech-pill">CloudFront</span>
+          </div>
+
+          <div class="timeline-progress" aria-label="Project progress: Building stage">
+            <div class="progress-stage active" aria-label="Idea stage, completed">Idea</div>
+            <div class="progress-connector active" aria-hidden="true"></div>
+            <div class="progress-stage active" aria-label="PoC stage, completed">PoC</div>
+            <div class="progress-connector active" aria-hidden="true"></div>
+            <div class="progress-stage active" aria-label="Building stage, current">Building</div>
+            <div class="progress-connector" aria-hidden="true"></div>
+            <div class="progress-stage" aria-label="Live stage, upcoming">Live</div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://www.linkedin.com/in/vishal-shorghar/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn about Portfolio Doctor">Connect on LinkedIn</a>
+          </div>
+        </article>
+
+        <!-- More Coming Soon -->
+        <article class="glass-card project-card teaser-card animate-on-scroll" aria-label="More projects coming soon">
+          <div class="teaser-content">
+            <span class="teaser-icon" aria-hidden="true">+</span>
+            <h3>More projects in the pipeline...</h3>
+            <p>AWS Developer Pro certified and building in public 🚀</p>
+            <a href="https://www.linkedin.com/in/vishal-shorghar/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">Follow on LinkedIn</a>
+          </div>
+        </article>
+
+        <div class="linkedin-banner animate-on-scroll">
+          <p>Follow my build journey on <a href="https://www.linkedin.com/in/vishal-shorghar/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="services-section" aria-label="Professional Services">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Areas I Can Help With</h2>
+        <div class="services-grid">
+          <div class="glass-card service-card animate-on-scroll">
+            <span class="service-icon" aria-hidden="true">☁️</span>
+            <h3>Cloud Architecture &amp; Migration</h3>
+            <p>Well-Architected reviews, migration roadmaps, landing zones, hybrid connectivity. End-to-end cloud strategy for enterprise workloads.</p>
+          </div>
+          <div class="glass-card service-card animate-on-scroll">
+            <span class="service-icon" aria-hidden="true">🤖</span>
+            <h3>GenAI Adoption &amp; Application Development</h3>
+            <p>RAG, agentic AI, LLM deployment, AI governance, production GenAI apps. From proof-of-concept to production-ready AI solutions.</p>
+          </div>
+          <div class="glass-card service-card animate-on-scroll">
+            <span class="service-icon" aria-hidden="true">⚙️</span>
+            <h3>Kubernetes &amp; Container Strategy</h3>
+            <p>EKS/OpenShift architecture, GitOps, service mesh, security, platform engineering. Building scalable container platforms.</p>
+          </div>
+          <div class="glass-card service-card animate-on-scroll">
+            <span class="service-icon" aria-hidden="true">💰</span>
+            <h3>FinOps &amp; Cloud Economics</h3>
+            <p>Rightsizing, reserved capacity, TCO modeling, cost governance. Achieve up to 40% cloud cost reduction with data-driven optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section id="certifications" class="certifications-section" aria-label="Professional Certifications">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Certifications</h2>
+        <div class="cert-badge animate-on-scroll" aria-label="4x AWS Certified badge">
+          <span>4x AWS Certified</span>
+        </div>
+        <div class="certifications-grid">
+          <div class="glass-card cert-card neon-glow animate-on-scroll" aria-label="AWS Certified GenAI Developer - Professional, 2025, newest certification, Early Adopter">
+            <span class="cert-new-badge">NEW</span>
+            <span class="cert-early-badge">Early Adopter</span>
+            <h3>AWS Certified GenAI Developer - Professional</h3>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll" aria-label="AWS Certified GenAI Practitioner, Early Adopter">
+            <span class="cert-early-badge">Early Adopter</span>
+            <h3>AWS Certified GenAI Practitioner</h3>
+            <span class="cert-year">Early Adopter</span>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll">
+            <h3>AWS Certified Solutions Architect - Professional</h3>
+            <span class="cert-year">2024</span>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll">
+            <h3>AWS Certified Solutions Architect - Associate</h3>
+            <span class="cert-year">2023</span>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll">
+            <h3>Certified Kubernetes Administrator (CKA)</h3>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll">
+            <h3>Azure Solutions Architect (AZ-303, AZ-304)</h3>
+          </div>
+          <div class="glass-card cert-card animate-on-scroll">
+            <h3>Red Hat Certified Engineer (RHCE)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPEAKING SECTION ========== -->
+    <section id="speaking" class="speaking-section" aria-label="Public Speaking and Community">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">On Stage &amp; In the Community</h2>
+        <div class="speaking-metrics animate-on-scroll">
+          <div class="speaking-metric">
+            <span class="metric-value">15+</span>
+            <span class="metric-label">workshops delivered across Nordic cities</span>
+          </div>
+
+        </div>
+        <div class="venue-pills animate-on-scroll" aria-label="Speaking venues">
+          <span class="tech-pill">KubeCon</span>
+          <span class="tech-pill">KCD</span>
+          <span class="tech-pill">RedHat Summit</span>
+          <span class="tech-pill">Open Source Days</span>
+        </div>
+        <div class="speaking-gallery">
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/speaking-1.jpeg" alt="Vishal Shorghar speaking at KubeCon" loading="lazy">
+            <div class="speaking-info">
+              <h3>KubeCon Talk</h3>
+              <p>Kubernetes and cloud-native architecture</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/speaking-2.jpeg" alt="Vishal Shorghar at KCD event" loading="lazy">
+            <div class="speaking-info">
+              <h3>KCD Event</h3>
+              <p>Container orchestration and DevOps practices</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/speaking-3.jpeg" alt="Vishal Shorghar at a workshop" loading="lazy">
+            <div class="speaking-info">
+              <h3>Workshop Session</h3>
+              <p>Hands-on cloud and K8s workshop</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/speaking-4.jpeg" alt="Vishal Shorghar at RedHat Summit" loading="lazy">
+            <div class="speaking-info">
+              <h3>RedHat Summit</h3>
+              <p>OpenShift and hybrid cloud strategies</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/speaking-5.jpeg" alt="Vishal Shorghar at Open Source Days" loading="lazy">
+            <div class="speaking-info">
+              <h3>Open Source Days</h3>
+              <p>Cloud-native community and adoption</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AWS SUMMITS & EVENTS SECTION ========== -->
+    <section id="events" class="events-section" aria-label="AWS Summits and Events">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">AWS Summits &amp; Events</h2>
+        <p class="section-subtitle animate-on-scroll">Well-traveled across the Nordics and EMEA — attending and speaking at AWS Summits, community events, and customer workshops</p>
+        <div class="events-gallery">
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-1.jpeg" alt="Vishal Shorghar at AWS Summit" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS Summit Copenhagen</h3>
+              <p>Cloud architecture and GenAI sessions</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-2.jpeg" alt="Vishal Shorghar at AWS Summit" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS Summit Stockholm</h3>
+              <p>Nordic enterprise cloud transformation</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-3.jpeg" alt="Vishal Shorghar at AWS event" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS EMEA Event</h3>
+              <p>Cross-region knowledge sharing</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-4.jpeg" alt="Vishal Shorghar at AWS Summit" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS Summit</h3>
+              <p>Kubernetes and container sessions</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-5.jpeg" alt="Vishal Shorghar at AWS event" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS Community Day</h3>
+              <p>Networking and community building</p>
+            </div>
+          </div>
+          <div class="glass-card speaking-card animate-on-scroll">
+            <img src="assets/images/summit-6.jpeg" alt="Vishal Shorghar at AWS Summit" loading="lazy">
+            <div class="speaking-info">
+              <h3>AWS Nordic Event</h3>
+              <p>GenAI and cloud innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="gallery" class="gallery-section" aria-label="Photo Gallery">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Moments &amp; Memories</h2>
+        <p class="section-subtitle animate-on-scroll">From customer events, team meetups, and travels across the Nordics</p>
+        <div class="photo-gallery">
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/event-1.jpeg" alt="Customer event" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/Event-team.jpeg" alt="Team event" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/helsinki.jpeg" alt="Helsinki event" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/tv2-1.jpeg" alt="TV2 visit" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/tv2-3.jpeg" alt="TV2 event" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/1.jpeg" alt="Event photo" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/2.jpeg" alt="Event photo" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/19.jpeg" alt="Event photo" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/26.jpg" alt="Event photo" loading="lazy">
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img src="assets/images/back/1.jpg" alt="Event photo" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BOOKING SECTION ========== -->
+    <section id="booking" class="booking-section" aria-label="Book a Consultation">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Let's Connect</h2>
+        <p class="section-subtitle animate-on-scroll">Free peer knowledge-sharing conversations — no commercial services, no fees. Just honest tech talk between practitioners.</p>
+
+        <div class="session-types-grid">
+          <div class="glass-card session-card animate-on-scroll">
+            <span class="session-duration">Free · 30 min</span>
+            <h3>Quick Connect</h3>
+            <p>Free chat — specific questions, sanity checks, or career advice</p>
+          </div>
+          <div class="glass-card session-card session-popular animate-on-scroll">
+            <span class="popular-badge">Most Popular</span>
+            <span class="session-duration">Free · 60 min</span>
+            <h3>Architecture Deep Dive</h3>
+            <p>Free session — work through an architecture challenge together</p>
+          </div>
+          <div class="glass-card session-card animate-on-scroll">
+            <span class="session-duration">Free · 90 min</span>
+            <h3>Strategic Advisory</h3>
+            <p>Free session — broader transformation strategy discussion</p>
+          </div>
+        </div>
+
+        <form id="booking-form" class="glass-card form-card animate-on-scroll" novalidate aria-label="Booking form">
+          <div class="form-group">
+            <label for="booking-name">Name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="booking-name" name="name" required autocomplete="name" aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="booking-email">Email <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="booking-email" name="email" required autocomplete="email" aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="booking-company">Company</label>
+            <input type="text" id="booking-company" name="company" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="booking-role">Role</label>
+            <input type="text" id="booking-role" name="role" autocomplete="organization-title">
+          </div>
+          <div class="form-group">
+            <label for="booking-session-type">Session Type <span class="required" aria-hidden="true">*</span></label>
+            <select id="booking-session-type" name="sessionType" required aria-required="true">
+              <option value="">Select a session type</option>
+              <option value="30-min-quick-connect">30 min — Quick Connect</option>
+              <option value="60-min-deep-dive">60 min — Architecture Deep Dive</option>
+              <option value="90-min-strategic">90 min — Strategic Advisory</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="booking-topic">Topic <span class="required" aria-hidden="true">*</span></label>
+            <select id="booking-topic" name="topic" required aria-required="true">
+              <option value="">Select a topic</option>
+              <option value="genai-llms-rag">GenAI/LLMs/RAG</option>
+              <option value="agentic-ai">Agentic AI</option>
+              <option value="aws-cloud-architecture">AWS Cloud Architecture</option>
+              <option value="kubernetes-eks-openshift">Kubernetes/EKS/OpenShift</option>
+              <option value="cloud-migration">Cloud Migration</option>
+              <option value="finops">FinOps</option>
+              <option value="security-compliance">Security &amp; Compliance</option>
+              <option value="multi-cloud">Multi-Cloud</option>
+              <option value="career-guidance">Career Guidance</option>
+              <option value="speaking-conference">Speaking/Conference</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="booking-message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="booking-message" name="message" rows="4" required aria-required="true" placeholder="Tell me about your challenge or question..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="booking-timezone">Timezone</label>
+            <input type="text" id="booking-timezone" name="timezone" placeholder="e.g., CET, EST, PST">
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" aria-label="Submit booking request">Request a Conversation</button>
+        </form>
+
+        <div class="disclaimer-box animate-on-scroll" aria-label="Disclaimer">
+          <p><strong>Important:</strong> This is a personal platform for free peer knowledge-sharing. All views expressed are entirely my own as an individual practitioner and do not represent any employer, past or present. No commercial services are offered. No confidential or proprietary information is discussed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+
+        <div class="contact-cards-grid">
+          <div class="glass-card contact-info-card animate-on-scroll">
+            <span class="contact-icon" aria-hidden="true">💼</span>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/vishal-shorghar/" target="_blank" rel="noopener noreferrer" aria-label="Visit Vishal Shorghar's LinkedIn profile">Connect on LinkedIn</a>
+          </div>
+          <div class="glass-card contact-info-card animate-on-scroll">
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <h3>Email</h3>
+            <a href="mailto:vshorrghar@gmail.com" aria-label="Send email to vshorrghar@gmail.com">vshorrghar@gmail.com</a>
+          </div>
+          <div class="glass-card contact-info-card animate-on-scroll">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <h3>Location</h3>
+            <p>Copenhagen, Denmark</p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="glass-card form-card animate-on-scroll" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="contact-name">Name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="contact-name" name="name" required autocomplete="name" aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="contact-email" name="email" required autocomplete="email" aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="contact-subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="contact-message" name="message" rows="5" required aria-required="true" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" aria-label="Send message">Send Message</button>
+          <p class="form-note">Backend integration (Formspree/API Gateway) coming soon</p>
+        </form>
+
+        <p class="disclaimer-text" aria-label="Disclaimer">This is a personal platform for community knowledge sharing. All conversations are free and represent my personal views only — not those of any employer, past or present. No commercial services are offered here.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#home" aria-label="Back to top">VS</a>
+          <p class="footer-tagline">Cloud Architect · GenAI Builder · Kubernetes Practitioner</p>
+        </div>
+        <p class="disclaimer-text" aria-label="Disclaimer">Personal platform. All views are my own as an individual practitioner — not representative of any employer.</p>
+        <p class="copyright">&copy; 2025 Vishal Shorghar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Visitor Counter -->
+  <div class="visitor-counter" id="visitor-counter" aria-label="Visitor count">
+    <span class="counter-icon">👁️</span>
+    <span class="counter-value" id="counter-value">0</span>
+    <span class="counter-label">visits</span>
+  </div>
+
+  <!-- Local JS — no external CDN dependencies -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/typing.js"></script>
+  <script src="assets/js/ticker.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

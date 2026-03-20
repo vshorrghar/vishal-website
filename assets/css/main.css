@@ -1,0 +1,85 @@
+/* ========== CSS Custom Properties (Design Tokens) ========== */
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0b0;
+  --neon-cyan: #00f0ff;
+  --neon-purple: #b44aff;
+  --neon-emerald: #00ff88;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 10px;
+  --section-padding: 100px 0;
+  --card-padding: 24px;
+  --card-radius: 16px;
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+}
+
+/* ========== Reset ========== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ========== Base Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.1rem; color: var(--text-secondary); }
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-purple);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--neon-purple);
+  color: #fff;
+}

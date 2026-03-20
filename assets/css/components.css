@@ -1,0 +1,291 @@
+/* ========== Glass Card ========== */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.1);
+}
+
+/* ========== Status Badge ========== */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.status-amber .status-dot {
+  background: #ffaa00;
+  box-shadow: 0 0 8px #ffaa00;
+}
+
+.status-blue .status-dot {
+  background: #4488ff;
+  box-shadow: 0 0 8px #4488ff;
+}
+
+/* ========== Tech Pills ========== */
+.tech-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+/* ========== Timeline Progress ========== */
+.timeline-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 24px 0;
+}
+
+.progress-stage {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.progress-stage.active {
+  color: var(--neon-emerald);
+  border-color: var(--neon-emerald);
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.progress-connector {
+  width: 40px;
+  height: 2px;
+  background: var(--glass-border);
+}
+
+.progress-connector.active {
+  background: var(--neon-emerald);
+  box-shadow: 0 0 6px rgba(0, 255, 136, 0.4);
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  color: #0a0a0f;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.4), 0 0 48px rgba(180, 74, 255, 0.2);
+  transform: translateY(-2px);
+  color: #0a0a0f;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 240, 255, 0.1);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.2);
+  transform: translateY(-2px);
+  color: var(--neon-cyan);
+}
+
+
+/* ========== Certification Badges ========== */
+.cert-new-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-emerald));
+  color: #0a0a0f;
+}
+
+.cert-early-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, var(--neon-purple), #ff44aa);
+  color: #fff;
+}
+
+.popular-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  color: #0a0a0f;
+}
+
+.neon-glow {
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15), inset 0 0 20px rgba(0, 240, 255, 0.05);
+}
+
+/* ========== Form Styles ========== */
+.form-card {
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-group .required {
+  color: #ff4466;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0a0b0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.form-group select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+/* Form error states */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+  border-color: #ff4466;
+  box-shadow: 0 0 8px rgba(255, 68, 102, 0.2);
+}
+
+.form-group .error-message {
+  color: #ff4466;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Form success message */
+.form-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success h3 {
+  color: var(--neon-emerald);
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  color: var(--text-secondary);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  opacity: 0.7;
+}
